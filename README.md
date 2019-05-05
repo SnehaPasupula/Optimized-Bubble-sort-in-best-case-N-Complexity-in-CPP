@@ -1,15 +1,6 @@
 # Optimized-Bubble-sort-in-best-case-N-Complexity
 Optimized Bubble sort 
-//
-void bubbleSort(int arr[], int n) 
-{ 
-   int i, j; 
-   for (i = 0; i < n-1; i++)         
-     //last i is in sorted manner
-     for (j = 0; j < n-i-1; j++)  
-           if (arr[j] > arr[j+1]) 
-              swap(&arr[j], &arr[j+1]); 
-} 
+Actual Bubble sort compares the whole array n^2 times even if the array is sorted.
 Optimized Implementation:
 The above function always runs O(n^2) time even if the array is sorted. It can be optimized by stopping the algorithm if inner loop didn’t cause any swap.
 
